@@ -1,0 +1,12 @@
+wandb_version: 1
+
+batch_size:
+  value: 50
+epoch:
+  value: 20
+gamma:
+  value: 0.9
+learning_rate:
+  value: 0.01
+optimizer:
+  value: adam

@@ -1,0 +1,40 @@
+2023-03-08 11:48:11,196 INFO    Thread-21 :15632 [wandb_setup.py:_flush():68] Configure stats pid to 15632
+2023-03-08 11:48:11,197 INFO    Thread-21 :15632 [wandb_setup.py:_flush():68] Loading settings from C:\Users\student\.config\wandb\settings
+2023-03-08 11:48:11,197 INFO    Thread-21 :15632 [wandb_setup.py:_flush():68] Loading settings from c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\settings
+2023-03-08 11:48:11,197 INFO    Thread-21 :15632 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'project': 'test', 'entity': 'g13hvl2023', 'root_dir': 'c:\\Users\\student\\Desktop\\Daniel og Sayna\\Bachelor\\Code\\notebooks\\pyTorch', 'run_id': '1hgnio7r', 'sweep_param_path': 'c:\\Users\\student\\Desktop\\Daniel og Sayna\\Bachelor\\Code\\notebooks\\pyTorch\\wandb\\sweep-e9dxcbmd\\config-1hgnio7r.yaml', 'sweep_id': 'e9dxcbmd'}
+2023-03-08 11:48:11,197 INFO    Thread-21 :15632 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-08 11:48:11,197 INFO    Thread-21 :15632 [wandb_init.py:_log_setup():492] Logging user logs to c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230308_114811-1hgnio7r\logs\debug.log
+2023-03-08 11:48:11,198 INFO    Thread-21 :15632 [wandb_init.py:_log_setup():493] Logging internal logs to c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230308_114811-1hgnio7r\logs\debug-internal.log
+2023-03-08 11:48:11,198 INFO    Thread-21 :15632 [wandb_init.py:_jupyter_setup():438] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x00000280B3A68100>
+2023-03-08 11:48:11,198 INFO    Thread-21 :15632 [wandb_init.py:init():532] calling init triggers
+2023-03-08 11:48:11,198 INFO    Thread-21 :15632 [wandb_init.py:init():538] wandb.init called with sweep_config: {'batch_size': 50, 'dropout': 0.4, 'epoch': 20, 'gamma': 0.99, 'learning_rate': 0.01, 'optimizer': 'adam'}
+config: {}
+2023-03-08 11:48:11,198 INFO    Thread-21 :15632 [wandb_init.py:init():588] starting backend
+2023-03-08 11:48:11,198 INFO    Thread-21 :15632 [wandb_init.py:init():592] setting up manager
+2023-03-08 11:48:11,208 INFO    Thread-21 :15632 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn, using: spawn
+2023-03-08 11:48:11,219 INFO    Thread-21 :15632 [wandb_init.py:init():599] backend started and connected
+2023-03-08 11:48:11,233 INFO    Thread-21 :15632 [wandb_run.py:_config_callback():1250] config_cb None None {'batch_size': 50, 'dropout': 0.4, 'epoch': 20, 'gamma': 0.99, 'learning_rate': 0.01, 'optimizer': 'adam'}
+2023-03-08 11:48:11,234 INFO    Thread-21 :15632 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-03-08 11:48:11,234 INFO    Thread-21 :15632 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-08 11:48:11,234 INFO    Thread-21 :15632 [wandb_init.py:init():687] updated telemetry
+2023-03-08 11:48:11,289 INFO    Thread-21 :15632 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-03-08 11:48:11,763 INFO    Thread-21 :15632 [wandb_run.py:_on_init():2134] communicating current version
+2023-03-08 11:48:11,880 INFO    Thread-21 :15632 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.13.11 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-08 11:48:11,880 INFO    Thread-21 :15632 [wandb_init.py:init():775] starting run threads in backend
+2023-03-08 11:48:12,059 INFO    Thread-21 :15632 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-08 11:48:12,059 INFO    Thread-21 :15632 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-08 11:48:12,060 INFO    Thread-21 :15632 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-08 11:48:12,060 INFO    Thread-21 :15632 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-08 11:48:12,060 INFO    Thread-21 :15632 [wandb_init.py:init():817] run started, returning control to user process
+2023-03-08 11:48:12,071 INFO    Thread-21 :15632 [wandb_watch.py:watch():51] Watching
+2023-03-08 11:54:35,560 INFO    Thread-21 :15632 [wandb_run.py:_finish():1854] finishing run g13hvl2023/test/1hgnio7r
+2023-03-08 11:54:35,561 INFO    Thread-21 :15632 [jupyter.py:save_history():449] not saving jupyter history
+2023-03-08 11:54:35,561 INFO    Thread-21 :15632 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-08 11:54:35,561 INFO    Thread-21 :15632 [wandb_init.py:_jupyter_teardown():420] cleaning up jupyter logic
+2023-03-08 11:54:35,561 INFO    Thread-21 :15632 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-03-08 11:54:35,561 INFO    Thread-21 :15632 [wandb_run.py:_restore():2066] restore
+2023-03-08 11:54:35,561 INFO    Thread-21 :15632 [wandb_run.py:_restore():2072] restore done
+2023-03-08 11:54:39,681 INFO    Thread-21 :15632 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-03-08 11:54:39,683 INFO    Thread-21 :15632 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-03-08 11:54:39,694 INFO    Thread-21 :15632 [wandb_run.py:_footer_sync_info():3398] logging synced files
