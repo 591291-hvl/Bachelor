@@ -1,0 +1,88 @@
+2023-03-13 15:40:26,125 INFO    StreamThr :13976 [internal.py:wandb_internal():87] W&B internal server running at pid: 13976, started at: 2023-03-13 15:40:26.124402
+2023-03-13 15:40:26,126 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: status
+2023-03-13 15:40:26,135 INFO    WriterThread:13976 [datastore.py:open_for_write():85] open: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230313_154026-4b4juhqu\run-4b4juhqu.wandb
+2023-03-13 15:40:26,136 DEBUG   SenderThread:13976 [sender.py:send():336] send: header
+2023-03-13 15:40:26,198 DEBUG   SenderThread:13976 [sender.py:send():336] send: run
+2023-03-13 15:40:26,708 INFO    SenderThread:13976 [dir_watcher.py:__init__():216] watching files in: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230313_154026-4b4juhqu\files
+2023-03-13 15:40:26,708 INFO    SenderThread:13976 [sender.py:_start_run_threads():1067] run started: 4b4juhqu with start time 1678718426.125402
+2023-03-13 15:40:26,709 DEBUG   SenderThread:13976 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 15:40:26,709 INFO    SenderThread:13976 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-13 15:40:26,713 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: check_version
+2023-03-13 15:40:26,713 DEBUG   SenderThread:13976 [sender.py:send_request():363] send_request: check_version
+2023-03-13 15:40:26,838 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: run_start
+2023-03-13 15:40:26,860 DEBUG   HandlerThread:13976 [system_info.py:__init__():31] System info init
+2023-03-13 15:40:26,860 DEBUG   HandlerThread:13976 [system_info.py:__init__():46] System info init done
+2023-03-13 15:40:26,860 INFO    HandlerThread:13976 [system_monitor.py:start():151] Starting system monitor
+2023-03-13 15:40:26,861 INFO    SystemMonitor:13976 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-03-13 15:40:26,861 INFO    HandlerThread:13976 [system_monitor.py:probe():172] Collecting system info
+2023-03-13 15:40:26,864 INFO    SystemMonitor:13976 [interfaces.py:start():168] Started cpu
+2023-03-13 15:40:26,864 INFO    SystemMonitor:13976 [interfaces.py:start():168] Started disk
+2023-03-13 15:40:26,865 INFO    SystemMonitor:13976 [interfaces.py:start():168] Started gpu
+2023-03-13 15:40:26,865 INFO    SystemMonitor:13976 [interfaces.py:start():168] Started memory
+2023-03-13 15:40:26,874 INFO    SystemMonitor:13976 [interfaces.py:start():168] Started network
+2023-03-13 15:40:26,880 DEBUG   HandlerThread:13976 [system_info.py:probe():195] Probing system
+2023-03-13 15:40:26,882 DEBUG   HandlerThread:13976 [system_info.py:_probe_git():180] Probing git
+2023-03-13 15:40:26,987 DEBUG   HandlerThread:13976 [system_info.py:_probe_git():188] Probing git done
+2023-03-13 15:40:26,988 DEBUG   HandlerThread:13976 [system_info.py:probe():241] Probing system done
+2023-03-13 15:40:26,988 DEBUG   HandlerThread:13976 [system_monitor.py:probe():181] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.9.16', 'heartbeatAt': '2023-03-13T14:40:26.880313', 'startedAt': '2023-03-13T14:40:26.111408', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/591291-hvl/Bachelor.git', 'commit': '745607760c9a63df00b8d041f35f478fd6bef525'}, 'email': '591291@stud.hvl.no', 'root': 'C:/Users/student/Desktop/Daniel og Sayna/Bachelor', 'host': 'DESKTOP-666ISMJ', 'username': 'student', 'executable': 'c:\\Users\\student\\Anaconda3\\envs\\DAT191-gpu\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3401.0, 'min': 0.0, 'max': 3401.0}, 'cpu_freq_per_core': [{'current': 3401.0, 'min': 0.0, 'max': 3401.0}], 'disk': {'total': 475.5688285827637, 'used': 203.51643753051758}, 'gpu': 'NVIDIA GeForce GTX 1080 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 31.902278900146484}}
+2023-03-13 15:40:26,988 INFO    HandlerThread:13976 [system_monitor.py:probe():182] Finished collecting system info
+2023-03-13 15:40:26,988 INFO    HandlerThread:13976 [system_monitor.py:probe():185] Publishing system info
+2023-03-13 15:40:26,988 DEBUG   HandlerThread:13976 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-13 15:40:26,989 DEBUG   HandlerThread:13976 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-13 15:40:26,989 DEBUG   HandlerThread:13976 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-03-13 15:40:26,991 ERROR   HandlerThread:13976 [system_info.py:_save_conda():85] Error saving conda packages: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "c:\Users\student\Anaconda3\envs\DAT191-gpu\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 81, in _save_conda
+    subprocess.call(
+  File "c:\Users\student\Anaconda3\envs\DAT191-gpu\lib\subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "c:\Users\student\Anaconda3\envs\DAT191-gpu\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "c:\Users\student\Anaconda3\envs\DAT191-gpu\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2023-03-13 15:40:26,993 DEBUG   HandlerThread:13976 [system_info.py:_save_conda():86] Saving conda packages done
+2023-03-13 15:40:26,994 INFO    HandlerThread:13976 [system_monitor.py:probe():187] Finished publishing system info
+2023-03-13 15:40:27,005 DEBUG   SenderThread:13976 [sender.py:send():336] send: files
+2023-03-13 15:40:27,005 INFO    SenderThread:13976 [sender.py:_save_file():1321] saving file wandb-metadata.json with policy now
+2023-03-13 15:40:27,021 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-13 15:40:27,022 DEBUG   SenderThread:13976 [sender.py:send_request():363] send_request: stop_status
+2023-03-13 15:40:27,222 DEBUG   SenderThread:13976 [sender.py:send():336] send: telemetry
+2023-03-13 15:40:27,708 INFO    wandb-upload_0:13976 [upload_job.py:push():138] Uploaded file C:\Users\student\AppData\Local\Temp\tmpcl_6az3gwandb\wvvzdb2o-wandb-metadata.json
+2023-03-13 15:40:27,715 INFO    Thread-17 :13976 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230313_154026-4b4juhqu\files\wandb-summary.json
+2023-03-13 15:40:27,715 INFO    Thread-17 :13976 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230313_154026-4b4juhqu\files\conda-environment.yaml
+2023-03-13 15:40:27,715 INFO    Thread-17 :13976 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230313_154026-4b4juhqu\files\wandb-metadata.json
+2023-03-13 15:40:27,716 INFO    Thread-17 :13976 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230313_154026-4b4juhqu\files\requirements.txt
+2023-03-13 15:40:27,858 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: pause
+2023-03-13 15:40:27,858 INFO    HandlerThread:13976 [handler.py:handle_request_pause():717] stopping system metrics thread or process
+2023-03-13 15:40:27,858 INFO    HandlerThread:13976 [system_monitor.py:finish():161] Stopping system monitor
+2023-03-13 15:40:27,859 DEBUG   SystemMonitor:13976 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-03-13 15:40:27,863 DEBUG   SystemMonitor:13976 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-03-13 15:40:27,863 INFO    HandlerThread:13976 [interfaces.py:finish():175] Joined cpu
+2023-03-13 15:40:27,863 DEBUG   SystemMonitor:13976 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-03-13 15:40:27,863 INFO    HandlerThread:13976 [interfaces.py:finish():175] Joined disk
+2023-03-13 15:40:27,904 INFO    HandlerThread:13976 [interfaces.py:finish():175] Joined gpu
+2023-03-13 15:40:27,904 INFO    HandlerThread:13976 [interfaces.py:finish():175] Joined memory
+2023-03-13 15:40:27,904 INFO    HandlerThread:13976 [interfaces.py:finish():175] Joined network
+2023-03-13 15:40:27,905 DEBUG   SenderThread:13976 [sender.py:send():336] send: stats
+2023-03-13 15:40:31,958 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: status_report
+2023-03-13 15:40:37,000 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: status_report
+2023-03-13 15:40:42,033 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-13 15:40:42,033 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-13 15:40:42,048 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: status_report
+2023-03-13 15:40:47,080 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-13 15:40:47,096 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: status_report
+2023-03-13 15:40:52,118 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-13 15:40:52,134 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: status_report
+2023-03-13 15:40:57,162 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-13 15:40:57,182 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: status_report
+2023-03-13 15:41:02,199 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-13 15:41:04,015 INFO    Thread-17 :13976 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230313_154026-4b4juhqu\files\config.yaml
+2023-03-13 15:41:07,226 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-13 15:41:08,621 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: status_report
+2023-03-13 15:41:12,280 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-13 15:41:13,663 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: status_report
+2023-03-13 15:41:17,329 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-13 15:41:18,708 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: status_report
+2023-03-13 15:41:22,359 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-13 15:41:23,749 DEBUG   HandlerThread:13976 [handler.py:handle_request():144] handle_request: status_report
