@@ -74,3 +74,15 @@ config: {'epoch': 10, 'batch_size': 50, 'gamma': 1, 'learning_rate': 0.01, 'opti
 2023-03-13 15:58:03,585 INFO    MainThread:12940 [wandb_init.py:_resume_backend():408] resuming backend
 2023-03-13 15:58:04,329 INFO    MainThread:12940 [jupyter.py:save_ipynb():379] not saving jupyter notebook
 2023-03-13 15:58:04,329 INFO    MainThread:12940 [wandb_init.py:_pause_backend():403] pausing backend
+2023-03-13 16:19:28,353 INFO    MainThread:12940 [wandb_init.py:_resume_backend():408] resuming backend
+2023-03-13 16:19:28,356 INFO    MainThread:12940 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-13 16:19:28,357 INFO    MainThread:12940 [wandb_init.py:_pause_backend():403] pausing backend
+2023-03-13 16:20:31,604 INFO    MainThread:12940 [wandb_init.py:_resume_backend():408] resuming backend
+2023-03-13 16:20:32,340 INFO    MainThread:12940 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-13 16:20:32,340 INFO    MainThread:12940 [wandb_init.py:_pause_backend():403] pausing backend
+2023-03-13 16:22:40,462 INFO    MainThread:12940 [wandb_init.py:_resume_backend():408] resuming backend
+2023-03-13 16:22:41,147 INFO    MainThread:12940 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-13 16:22:41,147 INFO    MainThread:12940 [wandb_init.py:_pause_backend():403] pausing backend
+2023-03-13 16:23:10,744 INFO    MainThread:12940 [wandb_init.py:_resume_backend():408] resuming backend
+2023-03-13 16:23:11,471 INFO    MainThread:12940 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-13 16:23:11,471 INFO    MainThread:12940 [wandb_init.py:_pause_backend():403] pausing backend

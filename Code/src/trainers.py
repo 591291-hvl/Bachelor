@@ -14,7 +14,7 @@ else:
     print("Running on the CPU")
 
 
-def run(model, train, test, runName, config=None):
+def run(model, train, test, config=None):
 
     #initialize variables
     # model = ConvModel(config['dropout']).to(device)
@@ -95,11 +95,14 @@ def run(model, train, test, runName, config=None):
         testRunningLoss = testRunningLoss/len(test) #TODO sjekk om dette faktisk er riktig???
         trainRunningLoss = trainRunningLoss/len(train) #TODO sjekk om dette faktisk er riktig???
 
-        testRecall = recall_score(y_pred, y_true)
-        testPrecision = precision_score(y_pred, y_true)
+        y_pred_numpy = [x.data.cpu().numpy() for x in y_pred]
+        y_true_numpy = [x.data.cpu().numpy() for x in y_true]
 
-        bhAccuarcy = sum([x == y for (x, y) in zip(y_pred, y_true) if x == 0.0])/len([x for x in y_true if x == 0.0])
-        sphAccuracy = sum([x == y for (x, y) in zip(y_pred, y_true) if x == 1.0])/len([x for x in y_true if x == 1.0])
+        testRecall = recall_score(y_pred_numpy, y_true_numpy)
+        testPrecision = precision_score(y_pred_numpy, y_true_numpy)
+
+        bhAccuarcy = sum([x == y for (x, y) in zip(y_pred_numpy, y_true_numpy) if x == 0.0])/len([x for x in y_true_numpy if x == 0.0])
+        sphAccuracy = sum([x == y for (x, y) in zip(y_pred_numpy, y_true_numpy) if x == 1.0])/len([x for x in y_true_numpy if x == 1.0])
         #test variables end
 
         #wandb log
@@ -197,11 +200,14 @@ def sweep(model, train, test, config=None):
         testRunningLoss = testRunningLoss/len(test)
         trainRunningLoss = trainRunningLoss/len(train)
         
-        testRecall = recall_score(y_pred, y_true)
-        testPrecision = precision_score(y_pred, y_true)
+        y_pred_numpy = [x.data.cpu().numpy() for x in y_pred]
+        y_true_numpy = [x.data.cpu().numpy() for x in y_true]
 
-        bhAccuarcy = sum([x == y for (x, y) in zip(y_pred, y_true) if x == 0.0])/len([x for x in y_true if x == 0.0])
-        sphAccuracy = sum([x == y for (x, y) in zip(y_pred, y_true) if x == 1.0])/len([x for x in y_true if x == 1.0])
+        testRecall = recall_score(y_pred_numpy, y_true_numpy)
+        testPrecision = precision_score(y_pred_numpy, y_true_numpy)
+
+        bhAccuarcy = sum([x == y for (x, y) in zip(y_pred_numpy, y_true_numpy) if x == 0.0])/len([x for x in y_true_numpy if x == 0.0])
+        sphAccuracy = sum([x == y for (x, y) in zip(y_pred_numpy, y_true_numpy) if x == 1.0])/len([x for x in y_true_numpy if x == 1.0])
         #test variables end
 
         #wandb log
