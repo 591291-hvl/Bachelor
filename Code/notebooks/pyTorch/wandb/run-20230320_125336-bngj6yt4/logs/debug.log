@@ -1,0 +1,30 @@
+2023-03-20 12:53:36,231 INFO    Thread-8  :1060 [wandb_setup.py:_flush():68] Configure stats pid to 1060
+2023-03-20 12:53:36,231 INFO    Thread-8  :1060 [wandb_setup.py:_flush():68] Loading settings from C:\Users\47472\.config\wandb\settings
+2023-03-20 12:53:36,231 INFO    Thread-8  :1060 [wandb_setup.py:_flush():68] Loading settings from c:\Users\47472\Documents\Skole\Hvl\s6\dat191\Bachelor\Code\notebooks\pyTorch\wandb\settings
+2023-03-20 12:53:36,231 INFO    Thread-8  :1060 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'project': 'test', 'entity': 'g13hvl2023', 'root_dir': 'c:\\Users\\47472\\Documents\\Skole\\Hvl\\s6\\dat191\\Bachelor\\Code\\notebooks\\pyTorch', 'sweep_id': 'tfvpu8i9', 'run_id': 'bngj6yt4', 'sweep_param_path': 'c:\\Users\\47472\\Documents\\Skole\\Hvl\\s6\\dat191\\Bachelor\\Code\\notebooks\\pyTorch\\wandb\\sweep-tfvpu8i9\\config-bngj6yt4.yaml'}
+2023-03-20 12:53:36,232 INFO    Thread-8  :1060 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-20 12:53:36,232 INFO    Thread-8  :1060 [wandb_init.py:_log_setup():492] Logging user logs to c:\Users\47472\Documents\Skole\Hvl\s6\dat191\Bachelor\Code\notebooks\pyTorch\wandb\run-20230320_125336-bngj6yt4\logs\debug.log
+2023-03-20 12:53:36,233 INFO    Thread-8  :1060 [wandb_init.py:_log_setup():493] Logging internal logs to c:\Users\47472\Documents\Skole\Hvl\s6\dat191\Bachelor\Code\notebooks\pyTorch\wandb\run-20230320_125336-bngj6yt4\logs\debug-internal.log
+2023-03-20 12:53:36,233 INFO    Thread-8  :1060 [wandb_init.py:_jupyter_setup():438] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x0000021E1203D940>
+2023-03-20 12:53:36,233 INFO    Thread-8  :1060 [wandb_init.py:init():532] calling init triggers
+2023-03-20 12:53:36,233 INFO    Thread-8  :1060 [wandb_init.py:init():538] wandb.init called with sweep_config: {'batch_size': 50, 'dropout': 0, 'epoch': 10, 'gamma': 1, 'learning_rate': 0.01, 'optimizer': 'adam'}
+config: {}
+2023-03-20 12:53:36,233 INFO    Thread-8  :1060 [wandb_init.py:init():588] starting backend
+2023-03-20 12:53:36,233 INFO    Thread-8  :1060 [wandb_init.py:init():592] setting up manager
+2023-03-20 12:53:36,240 INFO    Thread-8  :1060 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn, using: spawn
+2023-03-20 12:53:36,252 INFO    Thread-8  :1060 [wandb_init.py:init():599] backend started and connected
+2023-03-20 12:53:36,258 INFO    Thread-8  :1060 [wandb_run.py:_config_callback():1250] config_cb None None {'batch_size': 50, 'dropout': 0, 'epoch': 10, 'gamma': 1, 'learning_rate': 0.01, 'optimizer': 'adam'}
+2023-03-20 12:53:36,259 INFO    Thread-8  :1060 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-03-20 12:53:36,260 INFO    Thread-8  :1060 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-20 12:53:36,260 INFO    Thread-8  :1060 [wandb_init.py:init():687] updated telemetry
+2023-03-20 12:53:36,469 INFO    Thread-8  :1060 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-03-20 12:53:37,020 INFO    Thread-8  :1060 [wandb_run.py:_on_init():2134] communicating current version
+2023-03-20 12:53:37,168 INFO    Thread-8  :1060 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.14.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-20 12:53:37,168 INFO    Thread-8  :1060 [wandb_init.py:init():775] starting run threads in backend
+2023-03-20 12:53:37,351 INFO    Thread-8  :1060 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-20 12:53:37,351 INFO    Thread-8  :1060 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-20 12:53:37,352 INFO    Thread-8  :1060 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-20 12:53:37,352 INFO    Thread-8  :1060 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-20 12:53:37,352 INFO    Thread-8  :1060 [wandb_init.py:init():817] run started, returning control to user process
+2023-03-20 12:53:37,356 INFO    Thread-8  :1060 [wandb_watch.py:watch():51] Watching
