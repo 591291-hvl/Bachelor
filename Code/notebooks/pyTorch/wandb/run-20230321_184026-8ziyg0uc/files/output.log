@@ -1,23 +1,23 @@
-output:  [ 5.175217  -1.2010325] labels:  0.0
-output:  [ 5.7143335  -0.15044338] labels:  1.0
-output:  [ 3.9474154  -0.05411219] labels:  1.0
-output:  [ 5.284543  -0.5921571] labels:  1.0
-output:  [ 2.3703358 -0.6242059] labels:  0.0
-output:  [ 5.405696  -1.4984204] labels:  0.0
-output:  [11.2884   -2.582695] labels:  0.0
-output:  [ 9.473308 -7.505208] labels:  0.0
-output:  [ 5.9741344 -1.5301045] labels:  1.0
-output:  [ 3.1535685 -1.5227016] labels:  1.0
-output:  0 labels:  1.0
-output:  0 labels:  1.0
-output:  0 labels:  0.0
-output:  0 labels:  0.0
-output:  0 labels:  0.0
-output:  0 labels:  1.0
-output:  0 labels:  1.0
-output:  0 labels:  0.0
-output:  0 labels:  1.0
-output:  0 labels:  1.0
+output:  [-10.432296   8.331164] labels:  0.0
+output:  [-1.2174208  2.5185237] labels:  1.0
+output:  [-3.2225072  2.5704334] labels:  1.0
+output:  [-5.711571  8.145528] labels:  1.0
+output:  [-4.562096  4.881271] labels:  1.0
+output:  [-4.6416717  4.5350614] labels:  0.0
+output:  [ 6.2681627 -2.7844691] labels:  0.0
+output:  [-9.251623  8.278506] labels:  1.0
+output:  [-0.38813382 -0.28392407] labels:  1.0
+output:  [-7.9527354 13.166666 ] labels:  0.0
+output:  1 labels:  0.0
+output:  1 labels:  0.0
+output:  1 labels:  0.0
+output:  1 labels:  1.0
+output:  1 labels:  0.0
+output:  1 labels:  1.0
+output:  1 labels:  0.0
+output:  1 labels:  0.0
+output:  1 labels:  0.0
+output:  1 labels:  1.0
 (15000, 50, 50, 3)
 (15000, 50, 50, 3)
 Running on the GPU

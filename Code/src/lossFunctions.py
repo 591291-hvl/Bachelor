@@ -16,4 +16,5 @@ class ZeroOneLoss(nn.Module):
         super(ZeroOneLoss, self).__init__()
     
     def forward(self, input, targets):
-        return torch.tensor(sum([1 if x[y] > 0 else 0 for x,y in zip(input ,targets)])/input.size()[0], requires_grad=True)
+        listComp = [1 if x[y] > 0 else 0 for x,y in zip(input ,targets)]
+        return torch.tensor(sum(listComp)/input.size()[0], requires_grad=True)
