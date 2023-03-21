@@ -4,7 +4,7 @@ import wandb
 from torch.utils.data import DataLoader
 from sklearn.metrics import precision_score, recall_score
 
-
+import lossFunctions
 
 if torch.cuda.is_available():
     device = torch.device("cuda")
@@ -18,7 +18,12 @@ def run(model, train, test, config=None):
 
     #initialize variables
     # model = ConvModel(config['dropout']).to(device)
-    criterion = nn.CrossEntropyLoss()
+
+    if config['loss'] == 'cross':
+        criterion = nn.CrossEntropyLoss()
+    else:
+        criterion = lossFunctions.ZeroOneLoss()
+    
 
 
     if config['optimizer'] == 'adam':
@@ -125,7 +130,10 @@ def run(model, train, test, config=None):
 def sweep(model, train, test, config=None):
 
     #initialize variables
-    criterion = nn.CrossEntropyLoss()
+    if config['loss'] == 'cross':
+        criterion = nn.CrossEntropyLoss()
+    else:
+        criterion = ZeroOneLoss()
 
 
     if config.optimizer is 'adam':
