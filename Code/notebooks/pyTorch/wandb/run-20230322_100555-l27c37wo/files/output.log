@@ -1,0 +1,89 @@
+output:  [-3.9988546  4.920812 ] labels:  0.0
+output:  [-8.080364   5.1290464] labels:  1.0
+output:  [-6.4714694  3.4438324] labels:  0.0
+output:  [-2.737363   1.7335813] labels:  1.0
+output:  [-2.6523316  -0.38293916] labels:  0.0
+output:  [-3.5904334  7.2259355] labels:  0.0
+output:  [-3.2237008  2.250329 ] labels:  1.0
+output:  [-7.970924   -0.55521137] labels:  0.0
+output:  [-11.244413   9.39098 ] labels:  0.0
+output:  [-5.6617208  7.1753025] labels:  0.0
+output:  1 labels:  1.0
+output:  1 labels:  1.0
+output:  1 labels:  0.0
+output:  1 labels:  1.0
+output:  1 labels:  0.0
+output:  1 labels:  0.0
+output:  1 labels:  1.0
+output:  1 labels:  1.0
+output:  1 labels:  0.0
+output:  1 labels:  0.0
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(0.4800, requires_grad=True)
+tensor(4.7409, device='cuda:0', grad_fn=<DivBackward0>)

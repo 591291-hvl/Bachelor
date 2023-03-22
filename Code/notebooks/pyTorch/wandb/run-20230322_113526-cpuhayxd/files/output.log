@@ -1,0 +1,26 @@
+output:  [-1.2994047 -0.6606133] labels:  1.0
+output:  [ 1.5241854 -1.8658774] labels:  1.0
+output:  [-0.53440875  2.0724905 ] labels:  1.0
+output:  [-1.5610079  1.1741073] labels:  1.0
+output:  [ 3.0937893 -0.8533385] labels:  0.0
+output:  [-0.8071465   0.07306787] labels:  1.0
+output:  [-0.07751881  0.90305614] labels:  0.0
+output:  [-1.7489306 -1.0748515] labels:  1.0
+output:  [-0.69060594 -1.0506471 ] labels:  1.0
+output:  [-1.0930585 -1.2382454] labels:  1.0
+output:  0 labels:  0.0
+output:  1 labels:  0.0
+output:  0 labels:  1.0
+output:  0 labels:  0.0
+output:  0 labels:  0.0
+output:  1 labels:  0.0
+output:  0 labels:  0.0
+output:  0 labels:  1.0
+output:  0 labels:  1.0
+output:  1 labels:  0.0
+c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\src\lossFunctions.py:18: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  input = torch.tensor(input)
+tensor(2.4211, device='cuda:0')
+tensor(0.3800, requires_grad=True)
+tensor(1.6583, device='cuda:0', grad_fn=<NllLossBackward0>)
+tensor(2.4211, device='cuda:0')

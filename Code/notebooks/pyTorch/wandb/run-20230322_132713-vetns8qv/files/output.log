@@ -1,0 +1,45 @@
+output:  [-0.02915531  0.12106884] labels:  0.0
+output:  [-1.3014975   0.26224232] labels:  0.0
+output:  [ 8.970651  -7.0280857] labels:  0.0
+output:  [-0.56850487  0.08966851] labels:  0.0
+output:  [ 2.4393096 -1.611203 ] labels:  0.0
+output:  [-1.5382357   0.74478817] labels:  1.0
+output:  [ 5.6143513 -5.7639976] labels:  0.0
+output:  [-1.402095   0.4191811] labels:  1.0
+output:  [ 0.4231751  -0.10872054] labels:  0.0
+output:  [-0.3705539   0.44810247] labels:  0.0
+output:  0 labels:  0.0
+output:  1 labels:  1.0
+output:  1 labels:  1.0
+output:  1 labels:  1.0
+output:  0 labels:  0.0
+output:  0 labels:  1.0
+output:  0 labels:  0.0
+output:  1 labels:  0.0
+output:  1 labels:  1.0
+output:  1 labels:  1.0
+tensor(0.3391, device='cuda:0', grad_fn=<NllLossBackward0>)
+tensor(0.5222, device='cuda:0', grad_fn=<AddBackward0>)
+tensor(0.8600, requires_grad=True)
+(15000, 50, 50, 3)
+(15000, 50, 50, 3)
+Running on the GPU
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 16, 48, 48]             448
+            Conv2d-2           [-1, 64, 22, 22]           9,280
+            Conv2d-3            [-1, 256, 9, 9]         147,712
+            Linear-4                  [-1, 128]         295,040
+           Dropout-5                  [-1, 128]               0
+            Linear-6                    [-1, 2]             258
+================================================================
+Total params: 452,738
+Trainable params: 452,738
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.03
+Forward/backward pass size (MB): 0.68
+Params size (MB): 1.73
+Estimated Total Size (MB): 2.43
+----------------------------------------------------------------

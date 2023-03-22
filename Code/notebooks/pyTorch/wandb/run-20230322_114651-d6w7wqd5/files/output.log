@@ -1,0 +1,2 @@
+c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\src\lossFunctions.py:18: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  input = torch.tensor(input)

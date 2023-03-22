@@ -1,0 +1,22 @@
+output:  [ 2.2548413 -2.2119074] labels:  0.0
+output:  [ 0.10525537 -0.03198421] labels:  0.0
+output:  [-1.6795475   0.25460386] labels:  1.0
+output:  [-1.772572   1.5081016] labels:  1.0
+output:  [-1.4815702  1.563778 ] labels:  1.0
+output:  [ 2.291428  -2.2682562] labels:  0.0
+output:  [-1.188864   1.3056324] labels:  1.0
+output:  [-0.52653587  0.6171868 ] labels:  1.0
+output:  [ 4.926676  -6.8212824] labels:  0.0
+output:  [ 1.9329555 -1.8781198] labels:  0.0
+output:  1 labels:  0.0
+output:  1 labels:  1.0
+output:  0 labels:  0.0
+output:  1 labels:  1.0
+output:  1 labels:  1.0
+output:  0 labels:  0.0
+output:  1 labels:  1.0
+output:  1 labels:  1.0
+output:  1 labels:  1.0
+output:  1 labels:  1.0
+tensor(0.2476, device='cuda:0', grad_fn=<NllLossBackward0>)
+tensor(0.3566, device='cuda:0', grad_fn=<AddBackward0>)

@@ -1,0 +1,53 @@
+c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\src\lossFunctions.py:18: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  input = torch.tensor(input)
+c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\src\lossFunctions.py:18: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  input = torch.tensor(input)
+c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\src\lossFunctions.py:18: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  input = torch.tensor(input)
+c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\src\lossFunctions.py:18: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  input = torch.tensor(input)
+output:  [ 3.8571956 -3.2618349] labels:  0.0
+output:  [3.0564692 2.499803 ] labels:  0.0
+output:  [ 2.5908735 -3.0093384] labels:  1.0
+output:  [ 7.223155 -2.099517] labels:  0.0
+output:  [ 1.7539307  -0.46802345] labels:  0.0
+output:  [ 2.5083895 -1.703498 ] labels:  1.0
+output:  [ 4.482973 -2.594755] labels:  0.0
+output:  [14.100813   4.9423466] labels:  0.0
+output:  [4.6681337 1.8701707] labels:  0.0
+output:  [1.2018485 1.2361647] labels:  1.0
+output:  0 labels:  0.0
+output:  0 labels:  1.0
+output:  0 labels:  1.0
+output:  0 labels:  0.0
+output:  0 labels:  0.0
+output:  0 labels:  0.0
+output:  0 labels:  0.0
+output:  0 labels:  0.0
+output:  0 labels:  0.0
+output:  0 labels:  0.0
+tensor(1.6909, device='cuda:0', grad_fn=<NllLossBackward0>)
+tensor(1.6909, device='cuda:0')
+tensor(0.6400, requires_grad=True)
+(15000, 50, 50, 3)
+(15000, 50, 50, 3)
+Running on the GPU
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 16, 48, 48]             448
+            Conv2d-2           [-1, 64, 22, 22]           9,280
+            Conv2d-3            [-1, 256, 9, 9]         147,712
+            Linear-4                  [-1, 128]         295,040
+           Dropout-5                  [-1, 128]               0
+            Linear-6                    [-1, 2]             258
+================================================================
+Total params: 452,738
+Trainable params: 452,738
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.03
+Forward/backward pass size (MB): 0.68
+Params size (MB): 1.73
+Estimated Total Size (MB): 2.43
+----------------------------------------------------------------

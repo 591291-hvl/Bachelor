@@ -1,0 +1,47 @@
+output:  [-0.5760221  1.3521608] labels:  1.0
+output:  [-1.1311688  1.9030995] labels:  1.0
+output:  [ 0.56694275 -2.8514962 ] labels:  0.0
+output:  [-0.720972  0.974573] labels:  0.0
+output:  [-0.6607689   0.01648647] labels:  1.0
+output:  [ 0.06021231 -2.1344779 ] labels:  0.0
+output:  [-0.69398063  0.13279289] labels:  1.0
+output:  [ 0.40552765 -2.3845592 ] labels:  0.0
+output:  [-1.0306904  1.8030849] labels:  1.0
+output:  [-1.0740317  1.659395 ] labels:  1.0
+output:  0 labels:  0.0
+output:  0 labels:  0.0
+output:  1 labels:  1.0
+output:  1 labels:  0.0
+output:  0 labels:  0.0
+output:  0 labels:  0.0
+output:  1 labels:  1.0
+output:  1 labels:  1.0
+output:  1 labels:  1.0
+output:  0 labels:  0.0
+tensor(0.5171, device='cuda:0', grad_fn=<NllLossBackward0>)
+tensor(0.7860, device='cuda:0')
+tensor(0.5800, requires_grad=True)
+c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\src\lossFunctions.py:18: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  input = torch.tensor(input)
+(15000, 50, 50, 3)
+(15000, 50, 50, 3)
+Running on the GPU
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 16, 48, 48]             448
+            Conv2d-2           [-1, 64, 22, 22]           9,280
+            Conv2d-3            [-1, 256, 9, 9]         147,712
+            Linear-4                  [-1, 128]         295,040
+           Dropout-5                  [-1, 128]               0
+            Linear-6                    [-1, 2]             258
+================================================================
+Total params: 452,738
+Trainable params: 452,738
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.03
+Forward/backward pass size (MB): 0.68
+Params size (MB): 1.73
+Estimated Total Size (MB): 2.43
+----------------------------------------------------------------
