@@ -87,12 +87,10 @@ def run(model, train, test, config=None):
     #initialize variables
     # model = ConvModel(config['dropout']).to(device)
 
-    if config['loss'] == 'cross':
-        criterion = nn.CrossEntropyLoss()
-    elif config['loss'] == 'zeroOne':
-        criterion = lossFunctions.ZeroOneLoss1()
-    else:
+    if config['loss'] == 'customLoss':
         criterion = lossFunctions.CrossEntropyLoss()
+    else:
+        criterion = nn.CrossEntropyLoss()
     
     if config['optimizer'] == 'adam':
         optimizer = torch.optim.Adam(model.parameters(), lr=config['learning_rate'])
