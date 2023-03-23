@@ -31,3 +31,24 @@ class ZeroOneLoss(nn.Module):
     def forward(self, input, targets):
         listComp = [1 if x[y] > 0 else 0 for x,y in zip(input ,targets)]
         return torch.tensor(sum(listComp)/input.size()[0], requires_grad=True)
+
+class ZeroOneLoss1(nn.Module):
+    def __init__(self):
+        super(ZeroOneLoss1, self).__init__()
+
+    def forward(self, y_pred, y_true):
+        """
+        Computes the zero-one loss between the predicted and true labels.
+
+        Args:
+        - y_pred: predicted labels, a PyTorch tensor of shape (batch_size, num_classes)
+        - y_true: true labels, a PyTorch tensor of shape (batch_size, num_classes)
+
+        Returns:
+        - loss: the zero-one loss between the predicted and true labels, a PyTorch scalar tensor
+        """
+        y_pred = torch.tensor(y_pred.detach().clone(), requires_grad=True)
+        _, pred_idx = torch.max(y_pred, dim=-1)
+        errors = torch.abs(pred_idx - y_true)
+        loss = torch.mean(errors.double())
+        return loss

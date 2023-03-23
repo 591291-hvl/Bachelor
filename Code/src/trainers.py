@@ -90,7 +90,7 @@ def run(model, train, test, config=None):
     if config['loss'] == 'cross':
         criterion = nn.CrossEntropyLoss()
     elif config['loss'] == 'zeroOne':
-        criterion = lossFunctions.ZeroOneLoss()
+        criterion = lossFunctions.ZeroOneLoss1()
     else:
         criterion = lossFunctions.CrossEntropyLoss()
     
