@@ -1,0 +1,29 @@
+c:\Users\student\Anaconda3\envs\DAT191-gpu\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 due to no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+c:\Users\student\Anaconda3\envs\DAT191-gpu\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 due to no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+c:\Users\student\Anaconda3\envs\DAT191-gpu\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 due to no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+c:\Users\student\Anaconda3\envs\DAT191-gpu\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 due to no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+c:\Users\student\Anaconda3\envs\DAT191-gpu\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 due to no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+output:  [408105.9   -14179.566] labels:  0.0
+output:  [344006.5   -13189.228] labels:  0.0
+output:  [387047.1   -14321.993] labels:  0.0
+output:  [389107.44  -14187.263] labels:  0.0
+output:  [360755.97  -12647.636] labels:  0.0
+output:  [212153.08    -7947.1562] labels:  1.0
+output:  [322922.75  -11333.552] labels:  1.0
+output:  [208359.44    -7404.4473] labels:  1.0
+output:  [295453.4   -10142.261] labels:  1.0
+output:  [407278.22  -14644.743] labels:  0.0
+output:  0 labels:  0.0
+output:  0 labels:  1.0
+output:  0 labels:  1.0
+output:  0 labels:  1.0
+output:  0 labels:  0.0
+output:  0 labels:  1.0
+output:  0 labels:  1.0
+output:  0 labels:  0.0
+output:  0 labels:  0.0

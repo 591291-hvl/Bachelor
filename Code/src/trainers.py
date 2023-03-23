@@ -88,7 +88,9 @@ def run(model, train, test, config=None):
     # model = ConvModel(config['dropout']).to(device)
 
     if config['loss'] == 'customLoss':
-        criterion = lossFunctions.CrossEntropyLoss()
+        criterion = lossFunctions.CustomLoss()
+    elif config['loss'] == 'hinge':
+        criterion = nn.MultiMarginLoss()
     else:
         criterion = nn.CrossEntropyLoss()
     
@@ -155,12 +157,10 @@ def run(model, train, test, config=None):
 def sweep(model, train, test, config=None):
 
     #initialize variables
-    if config['loss'] == 'cross':
-        criterion = nn.CrossEntropyLoss()
-    elif config['loss'] == 'zeroOne':
-        criterion = lossFunctions.ZeroOneLoss()
+    if config['loss'] == 'customLoss':
+        criterion = lossFunctions.CustomLoss()
     else:
-        criterion = lossFunctions.CrossEntropyLoss()
+        criterion = nn.CrossEntropyLoss()
 
 
     if config.optimizer is 'adam':
