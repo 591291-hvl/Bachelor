@@ -1,0 +1,29 @@
+c:\Users\student\Anaconda3\envs\DAT191-gpu\lib\site-packages\torch\autograd\__init__.py:197: UserWarning: An output with one or more elements was resized since it had shape [], which does not match the required output shape [50, 2]. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\Resize.cpp:24.)
+  Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+c:\Users\student\Anaconda3\envs\DAT191-gpu\lib\site-packages\torch\autograd\__init__.py:197: UserWarning: An output with one or more elements was resized since it had shape [], which does not match the required output shape [50, 2]. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\Resize.cpp:24.)
+  Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+c:\Users\student\Anaconda3\envs\DAT191-gpu\lib\site-packages\torch\autograd\__init__.py:197: UserWarning: An output with one or more elements was resized since it had shape [], which does not match the required output shape [50, 2]. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\Resize.cpp:24.)
+  Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+c:\Users\student\Anaconda3\envs\DAT191-gpu\lib\site-packages\torch\autograd\__init__.py:197: UserWarning: An output with one or more elements was resized since it had shape [], which does not match the required output shape [50, 2]. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\Resize.cpp:24.)
+  Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+c:\Users\student\Anaconda3\envs\DAT191-gpu\lib\site-packages\torch\autograd\__init__.py:197: UserWarning: An output with one or more elements was resized since it had shape [], which does not match the required output shape [50, 2]. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\Resize.cpp:24.)
+  Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+output:  [ 0.6924771  -0.70151937] labels:  0.0
+output:  [-0.5060737   0.51171345] labels:  1.0
+output:  [ 2.9826896 -2.5968385] labels:  0.0
+output:  [ 0.7430892 -0.7409172] labels:  0.0
+output:  [-0.4939226   0.49777725] labels:  0.0
+output:  [-0.5047974  0.5096323] labels:  1.0
+output:  [-0.5021031   0.50614923] labels:  0.0
+output:  [-0.50471324  0.50949734] labels:  1.0
+output:  [ 0.565598   -0.56005824] labels:  0.0
+output:  [ 0.9934312 -0.9994892] labels:  0.0
+output:  0 labels:  0.0
+output:  1 labels:  1.0
+output:  1 labels:  1.0
+output:  0 labels:  0.0
+output:  1 labels:  1.0
+output:  1 labels:  1.0
+output:  1 labels:  0.0
+output:  1 labels:  1.0
+output:  0 labels:  0.0

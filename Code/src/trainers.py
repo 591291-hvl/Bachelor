@@ -91,7 +91,7 @@ def run(train, test, config=None):
     if config['model'] == 'cnn':
         model = nnmodels.ConvModel(config['dropout']).to(device)
     elif config['model'] == 'resnet34':
-        model = nnmodels.ResNet(nnmodels.ResidualBlock, [3, 4, 6, 3], 2, 3).to(device)
+        model = nnmodels.ResNetModel(nnmodels.ResidualBlock, [3, 4, 6, 3]).to(device)
     elif config['model'] == 'resnet50':
         model = nnmodels.ResNet(nnmodels.Bottleneck, [3, 4, 6, 3], 2, 3).to(device)
     elif config['model'] == 'resnet101':
@@ -175,7 +175,7 @@ def sweep(train, test, config=None):
     if config['model'] == 'cnn':
         model = nnmodels.ConvModel(config['dropout']).to(device)
     elif config['model'] == 'resnet34':
-        model = nnmodels.ResNet(nnmodels.ResidualBlock, [3, 4, 6, 3], 2, 3).to(device)
+        model = nnmodels.ResNetModel(nnmodels.ResidualBlock, [3, 4, 6, 3]).to(device)
     elif config['model'] == 'resnet50':
         model = nnmodels.ResNet(nnmodels.Bottleneck, [3, 4, 6, 3], 2, 3).to(device)
     elif config['model'] == 'resnet101':
