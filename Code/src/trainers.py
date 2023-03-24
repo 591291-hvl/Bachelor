@@ -5,6 +5,7 @@ from torch.utils.data import DataLoader
 from sklearn.metrics import precision_score, recall_score
 
 import lossFunctions
+import nnmodels
 
 if torch.cuda.is_available():
     device = torch.device("cuda")
@@ -82,11 +83,21 @@ def testLoop(model, testLoader, criterion, test):
     return testAccuracy, testRunningLoss, testRecall, testPrecision, bhAccuarcy, sphAccuracy, y_pred, y_true
 
 
-def run(model, train, test, config=None):
+def run(train, test, config=None):
 
     #initialize variables
-    # model = ConvModel(config['dropout']).to(device)
 
+    # ==== Models
+    if config['model'] == 'cnn':
+        model = nnmodels.ConvModel(config['dropout']).to(device)
+    elif config['model'] == 'resnet34':
+        model = nnmodels.ResNet(nnmodels.ResidualBlock, [3, 4, 6, 3], 2, 3).to(device)
+    elif config['model'] == 'resnet50':
+        model = nnmodels.ResNet(nnmodels.Bottleneck, [3, 4, 6, 3], 2, 3).to(device)
+    elif config['model'] == 'resnet101':
+        model = nnmodels.ResNet(nnmodels.Bottleneck, [3, 4, 23, 3], 2, 3).to(device)
+    
+    # ==== Loss functions
     if config['loss'] == 'customLoss':
         criterion = lossFunctions.CustomLoss()
     elif config['loss'] == 'hinge':
@@ -94,10 +105,12 @@ def run(model, train, test, config=None):
     else:
         criterion = nn.CrossEntropyLoss()
     
+    # ==== Optimizers
     if config['optimizer'] == 'adam':
         optimizer = torch.optim.Adam(model.parameters(), lr=config['learning_rate'])
     else:
         optimizer = torch.optim.SGD(model.parameters(), lr=config['learning_rate'])
+
 
     scheduler = torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma=config['gamma'], last_epoch=-1)
     #initialize variables end
@@ -154,23 +167,36 @@ def run(model, train, test, config=None):
     return model, y_pred_out, y_true_out
 
 
-def sweep(model, train, test, config=None):
+def sweep(train, test, config=None):
 
     #initialize variables
+
+    # ==== Models
+    if config['model'] == 'cnn':
+        model = nnmodels.ConvModel(config['dropout']).to(device)
+    elif config['model'] == 'resnet34':
+        model = nnmodels.ResNet(nnmodels.ResidualBlock, [3, 4, 6, 3], 2, 3).to(device)
+    elif config['model'] == 'resnet50':
+        model = nnmodels.ResNet(nnmodels.Bottleneck, [3, 4, 6, 3], 2, 3).to(device)
+    elif config['model'] == 'resnet101':
+        model = nnmodels.ResNet(nnmodels.Bottleneck, [3, 4, 23, 3], 2, 3).to(device)
+    
+    # ==== Loss functions
     if config['loss'] == 'customLoss':
         criterion = lossFunctions.CustomLoss()
     elif config['loss'] == 'hinge':
         criterion = nn.MultiMarginLoss()
     else:
         criterion = nn.CrossEntropyLoss()
-
-
-    if config.optimizer is 'adam':
-        optimizer = torch.optim.Adam(model.parameters(), lr=config.learning_rate)
+    
+    # ==== Optimizers
+    if config['optimizer'] == 'adam':
+        optimizer = torch.optim.Adam(model.parameters(), lr=config['learning_rate'])
     else:
-        optimizer = torch.optim.SGD(model.parameters(), lr=config.learning_rate)
+        optimizer = torch.optim.SGD(model.parameters(), lr=config['learning_rate'])
 
-    scheduler = torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma=config.gamma, last_epoch=-1)
+
+    scheduler = torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma=config['gamma'], last_epoch=-1)
     #initialize variables end
 
 
