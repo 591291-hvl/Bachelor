@@ -159,6 +159,8 @@ def sweep(model, train, test, config=None):
     #initialize variables
     if config['loss'] == 'customLoss':
         criterion = lossFunctions.CustomLoss()
+    elif config['loss'] == 'hinge':
+        criterion = nn.MultiMarginLoss()
     else:
         criterion = nn.CrossEntropyLoss()
 

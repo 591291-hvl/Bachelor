@@ -1,0 +1,679 @@
+2023-03-24 10:05:38,835 INFO    StreamThr :1364 [internal.py:wandb_internal():87] W&B internal server running at pid: 1364, started at: 2023-03-24 10:05:38.835416
+2023-03-24 10:05:38,837 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status
+2023-03-24 10:05:38,847 INFO    WriterThread:1364 [datastore.py:open_for_write():85] open: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\run-23qcu3ec.wandb
+2023-03-24 10:05:38,849 DEBUG   SenderThread:1364 [sender.py:send():336] send: header
+2023-03-24 10:05:38,905 DEBUG   SenderThread:1364 [sender.py:send():336] send: run
+2023-03-24 10:05:39,353 INFO    SenderThread:1364 [dir_watcher.py:__init__():216] watching files in: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files
+2023-03-24 10:05:39,353 INFO    SenderThread:1364 [sender.py:_start_run_threads():1067] run started: 23qcu3ec with start time 1679648738.836415
+2023-03-24 10:05:39,353 DEBUG   SenderThread:1364 [sender.py:send_request():363] send_request: summary_record
+2023-03-24 10:05:39,354 INFO    SenderThread:1364 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-24 10:05:39,356 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: check_version
+2023-03-24 10:05:39,356 DEBUG   SenderThread:1364 [sender.py:send_request():363] send_request: check_version
+2023-03-24 10:05:39,494 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: run_start
+2023-03-24 10:05:39,516 DEBUG   HandlerThread:1364 [system_info.py:__init__():31] System info init
+2023-03-24 10:05:39,516 DEBUG   HandlerThread:1364 [system_info.py:__init__():46] System info init done
+2023-03-24 10:05:39,517 INFO    HandlerThread:1364 [system_monitor.py:start():151] Starting system monitor
+2023-03-24 10:05:39,517 INFO    SystemMonitor:1364 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-03-24 10:05:39,517 INFO    HandlerThread:1364 [system_monitor.py:probe():172] Collecting system info
+2023-03-24 10:05:39,520 INFO    SystemMonitor:1364 [interfaces.py:start():168] Started cpu
+2023-03-24 10:05:39,521 INFO    SystemMonitor:1364 [interfaces.py:start():168] Started disk
+2023-03-24 10:05:39,521 INFO    SystemMonitor:1364 [interfaces.py:start():168] Started gpu
+2023-03-24 10:05:39,522 INFO    SystemMonitor:1364 [interfaces.py:start():168] Started memory
+2023-03-24 10:05:39,531 INFO    SystemMonitor:1364 [interfaces.py:start():168] Started network
+2023-03-24 10:05:39,546 DEBUG   HandlerThread:1364 [system_info.py:probe():195] Probing system
+2023-03-24 10:05:39,548 DEBUG   HandlerThread:1364 [system_info.py:_probe_git():180] Probing git
+2023-03-24 10:05:39,640 DEBUG   HandlerThread:1364 [system_info.py:_probe_git():188] Probing git done
+2023-03-24 10:05:39,640 DEBUG   HandlerThread:1364 [system_info.py:probe():241] Probing system done
+2023-03-24 10:05:39,640 DEBUG   HandlerThread:1364 [system_monitor.py:probe():181] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.9.16', 'heartbeatAt': '2023-03-24T09:05:39.546012', 'startedAt': '2023-03-24T09:05:38.814426', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/591291-hvl/Bachelor.git', 'commit': 'f0b325ccda46b0f4c24e2e54b0f6477f1acb7846'}, 'email': '591291@stud.hvl.no', 'root': 'C:/Users/student/Desktop/Daniel og Sayna/Bachelor', 'host': 'DESKTOP-666ISMJ', 'username': 'student', 'executable': 'c:\\Users\\student\\Anaconda3\\envs\\DAT191-gpu\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3401.0, 'min': 0.0, 'max': 3401.0}, 'cpu_freq_per_core': [{'current': 3401.0, 'min': 0.0, 'max': 3401.0}], 'disk': {'total': 475.5688285827637, 'used': 196.30147552490234}, 'gpu': 'NVIDIA GeForce GTX 1080 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 31.902278900146484}}
+2023-03-24 10:05:39,641 INFO    HandlerThread:1364 [system_monitor.py:probe():182] Finished collecting system info
+2023-03-24 10:05:39,641 INFO    HandlerThread:1364 [system_monitor.py:probe():185] Publishing system info
+2023-03-24 10:05:39,641 DEBUG   HandlerThread:1364 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-24 10:05:39,642 DEBUG   HandlerThread:1364 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-24 10:05:39,642 DEBUG   HandlerThread:1364 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-03-24 10:05:39,645 ERROR   HandlerThread:1364 [system_info.py:_save_conda():85] Error saving conda packages: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "c:\Users\student\Anaconda3\envs\DAT191-gpu\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 81, in _save_conda
+    subprocess.call(
+  File "c:\Users\student\Anaconda3\envs\DAT191-gpu\lib\subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "c:\Users\student\Anaconda3\envs\DAT191-gpu\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "c:\Users\student\Anaconda3\envs\DAT191-gpu\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2023-03-24 10:05:39,646 DEBUG   HandlerThread:1364 [system_info.py:_save_conda():86] Saving conda packages done
+2023-03-24 10:05:39,647 INFO    HandlerThread:1364 [system_monitor.py:probe():187] Finished publishing system info
+2023-03-24 10:05:39,658 DEBUG   SenderThread:1364 [sender.py:send():336] send: files
+2023-03-24 10:05:39,659 INFO    SenderThread:1364 [sender.py:_save_file():1321] saving file wandb-metadata.json with policy now
+2023-03-24 10:05:39,674 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-24 10:05:39,675 DEBUG   SenderThread:1364 [sender.py:send_request():363] send_request: stop_status
+2023-03-24 10:05:39,681 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: pause
+2023-03-24 10:05:39,681 INFO    HandlerThread:1364 [handler.py:handle_request_pause():717] stopping system metrics thread or process
+2023-03-24 10:05:39,681 INFO    HandlerThread:1364 [system_monitor.py:finish():161] Stopping system monitor
+2023-03-24 10:05:39,681 DEBUG   SystemMonitor:1364 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-03-24 10:05:39,681 DEBUG   SystemMonitor:1364 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-03-24 10:05:39,682 DEBUG   SystemMonitor:1364 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-03-24 10:05:39,687 INFO    HandlerThread:1364 [interfaces.py:finish():175] Joined cpu
+2023-03-24 10:05:39,687 INFO    HandlerThread:1364 [interfaces.py:finish():175] Joined disk
+2023-03-24 10:05:39,726 INFO    HandlerThread:1364 [interfaces.py:finish():175] Joined gpu
+2023-03-24 10:05:39,726 INFO    HandlerThread:1364 [interfaces.py:finish():175] Joined memory
+2023-03-24 10:05:39,726 INFO    HandlerThread:1364 [interfaces.py:finish():175] Joined network
+2023-03-24 10:05:39,727 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: resume
+2023-03-24 10:05:39,727 INFO    HandlerThread:1364 [handler.py:handle_request_resume():708] starting system metrics thread or process
+2023-03-24 10:05:39,727 INFO    HandlerThread:1364 [system_monitor.py:start():151] Starting system monitor
+2023-03-24 10:05:39,727 INFO    SystemMonitor:1364 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-03-24 10:05:39,731 INFO    SystemMonitor:1364 [interfaces.py:start():168] Started cpu
+2023-03-24 10:05:39,731 INFO    SystemMonitor:1364 [interfaces.py:start():168] Started disk
+2023-03-24 10:05:39,732 INFO    SystemMonitor:1364 [interfaces.py:start():168] Started gpu
+2023-03-24 10:05:39,733 INFO    SystemMonitor:1364 [interfaces.py:start():168] Started memory
+2023-03-24 10:05:39,742 INFO    SystemMonitor:1364 [interfaces.py:start():168] Started network
+2023-03-24 10:05:39,895 DEBUG   SenderThread:1364 [sender.py:send():336] send: telemetry
+2023-03-24 10:05:39,895 DEBUG   SenderThread:1364 [sender.py:send():336] send: stats
+2023-03-24 10:05:39,896 DEBUG   SenderThread:1364 [sender.py:send():336] send: telemetry
+2023-03-24 10:05:40,302 INFO    wandb-upload_0:1364 [upload_job.py:push():138] Uploaded file C:\Users\student\AppData\Local\Temp\tmpz14ckbi3wandb\1h85oktq-wandb-metadata.json
+2023-03-24 10:05:40,358 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\conda-environment.yaml
+2023-03-24 10:05:40,358 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\wandb-summary.json
+2023-03-24 10:05:40,358 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\requirements.txt
+2023-03-24 10:05:40,359 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:05:40,359 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\wandb-metadata.json
+2023-03-24 10:05:42,401 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:05:42,573 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:05:43,850 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:05:44,620 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:05:46,623 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:05:48,670 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:05:48,879 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:05:50,782 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:05:52,924 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:05:53,882 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:05:54,668 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:05:54,668 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:05:55,040 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:05:57,134 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:05:58,926 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:05:59,225 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:05:59,701 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:06:01,337 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:03,440 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:03,930 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:06:04,749 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:06:05,512 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:07,585 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:08,942 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:06:09,889 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:06:10,035 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:10,036 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\config.yaml
+2023-03-24 10:06:10,780 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:10,782 DEBUG   SenderThread:1364 [sender.py:send():336] send: history
+2023-03-24 10:06:10,782 DEBUG   SenderThread:1364 [sender.py:send_request():363] send_request: summary_record
+2023-03-24 10:06:10,783 INFO    SenderThread:1364 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-24 10:06:11,043 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\wandb-summary.json
+2023-03-24 10:06:12,047 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:13,063 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:14,104 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:14,233 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:06:14,840 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:06:16,225 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:18,356 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:19,237 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:06:19,905 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:06:20,515 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:22,540 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:24,112 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:24,113 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:24,114 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:24,114 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:24,117 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:24,117 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:24,122 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:24,123 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:24,123 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:24,124 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:24,253 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:06:24,640 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:24,932 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:06:26,727 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:28,869 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:29,317 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:06:29,966 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:06:31,054 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:33,118 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:34,359 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:06:34,996 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:06:35,211 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:37,446 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:39,593 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:39,605 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:06:39,605 DEBUG   SenderThread:1364 [sender.py:send():336] send: history
+2023-03-24 10:06:39,607 DEBUG   SenderThread:1364 [sender.py:send_request():363] send_request: summary_record
+2023-03-24 10:06:39,609 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:39,609 INFO    SenderThread:1364 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-24 10:06:39,747 DEBUG   SystemMonitor:1364 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-03-24 10:06:39,748 DEBUG   SenderThread:1364 [sender.py:send():336] send: stats
+2023-03-24 10:06:40,027 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:06:40,609 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\wandb-summary.json
+2023-03-24 10:06:41,669 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:43,771 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:44,656 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:06:44,959 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:44,961 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:44,964 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:44,967 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:45,003 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:45,004 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:45,007 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:45,008 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:45,010 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:45,011 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:06:45,070 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:06:45,847 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:47,959 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:49,668 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:06:50,043 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:50,091 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:06:53,181 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:54,710 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:06:55,139 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:06:55,186 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:57,202 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:59,233 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:06:59,762 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:07:00,167 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:07:01,248 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:03,277 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:04,995 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:07:05,213 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:07:05,299 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:07,476 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:08,365 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:08,368 DEBUG   SenderThread:1364 [sender.py:send():336] send: history
+2023-03-24 10:07:08,369 DEBUG   SenderThread:1364 [sender.py:send_request():363] send_request: summary_record
+2023-03-24 10:07:08,371 INFO    SenderThread:1364 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-24 10:07:08,483 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\wandb-summary.json
+2023-03-24 10:07:09,496 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:09,781 DEBUG   SenderThread:1364 [sender.py:send():336] send: stats
+2023-03-24 10:07:10,021 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:07:10,249 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:07:10,952 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:10,953 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:10,953 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:10,954 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:10,956 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:10,956 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:10,959 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:10,959 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:10,960 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:10,961 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:11,514 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:13,528 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:15,044 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:07:15,309 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:07:15,543 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:17,626 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:19,762 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:20,059 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:07:20,355 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:07:21,803 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:23,910 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:25,110 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:07:25,389 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:07:26,017 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:28,113 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:30,117 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:07:30,241 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:30,420 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:07:32,334 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:34,480 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:35,124 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:07:35,466 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:07:36,812 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:36,817 DEBUG   SenderThread:1364 [sender.py:send():336] send: history
+2023-03-24 10:07:36,819 DEBUG   SenderThread:1364 [sender.py:send_request():363] send_request: summary_record
+2023-03-24 10:07:36,821 INFO    SenderThread:1364 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-24 10:07:37,548 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:37,548 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\wandb-summary.json
+2023-03-24 10:07:39,574 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:39,764 DEBUG   SenderThread:1364 [sender.py:send():336] send: stats
+2023-03-24 10:07:40,162 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:07:40,514 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:07:41,619 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:43,637 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:45,163 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:07:45,559 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:07:45,670 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:47,663 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:47,666 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:47,667 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:47,669 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:47,699 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:47,704 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:47,705 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:47,707 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:47,708 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:47,709 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:47,710 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:07:49,715 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:50,187 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:07:50,607 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:07:51,732 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:53,761 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:55,217 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:07:55,662 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:07:55,788 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:57,811 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:07:59,840 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:08:00,242 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:08:00,701 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:08:00,967 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:08:00,968 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:08:00,968 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:08:00,969 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:08:00,971 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:08:00,972 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:08:00,976 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:08:00,977 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:08:00,977 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:08:00,978 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:08:01,873 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:08:04,233 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:08:05,372 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:08:05,432 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-24 10:08:05,439 DEBUG   SenderThread:1364 [sender.py:send():336] send: history
+2023-03-24 10:08:05,441 DEBUG   SenderThread:1364 [sender.py:send_request():363] send_request: summary_record
+2023-03-24 10:08:05,443 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: pause
+2023-03-24 10:08:05,443 INFO    HandlerThread:1364 [handler.py:handle_request_pause():717] stopping system metrics thread or process
+2023-03-24 10:08:05,443 INFO    HandlerThread:1364 [system_monitor.py:finish():161] Stopping system monitor
+2023-03-24 10:08:05,444 INFO    SenderThread:1364 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-24 10:08:05,448 DEBUG   SystemMonitor:1364 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-03-24 10:08:05,449 DEBUG   SystemMonitor:1364 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-03-24 10:08:05,449 INFO    HandlerThread:1364 [interfaces.py:finish():175] Joined cpu
+2023-03-24 10:08:05,450 INFO    HandlerThread:1364 [interfaces.py:finish():175] Joined disk
+2023-03-24 10:08:05,486 INFO    HandlerThread:1364 [interfaces.py:finish():175] Joined gpu
+2023-03-24 10:08:05,486 INFO    HandlerThread:1364 [interfaces.py:finish():175] Joined memory
+2023-03-24 10:08:05,487 INFO    HandlerThread:1364 [interfaces.py:finish():175] Joined network
+2023-03-24 10:08:05,487 DEBUG   SenderThread:1364 [sender.py:send():336] send: stats
+2023-03-24 10:08:05,511 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: resume
+2023-03-24 10:08:05,511 INFO    HandlerThread:1364 [handler.py:handle_request_resume():708] starting system metrics thread or process
+2023-03-24 10:08:05,511 INFO    HandlerThread:1364 [system_monitor.py:start():151] Starting system monitor
+2023-03-24 10:08:05,512 INFO    SystemMonitor:1364 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-03-24 10:08:05,516 INFO    SystemMonitor:1364 [interfaces.py:start():168] Started cpu
+2023-03-24 10:08:05,517 INFO    SystemMonitor:1364 [interfaces.py:start():168] Started disk
+2023-03-24 10:08:05,517 INFO    SystemMonitor:1364 [interfaces.py:start():168] Started gpu
+2023-03-24 10:08:05,517 INFO    SystemMonitor:1364 [interfaces.py:start():168] Started memory
+2023-03-24 10:08:05,531 INFO    SystemMonitor:1364 [interfaces.py:start():168] Started network
+2023-03-24 10:08:05,749 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:08:06,169 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: pause
+2023-03-24 10:08:06,170 INFO    HandlerThread:1364 [handler.py:handle_request_pause():717] stopping system metrics thread or process
+2023-03-24 10:08:06,170 INFO    HandlerThread:1364 [system_monitor.py:finish():161] Stopping system monitor
+2023-03-24 10:08:06,170 DEBUG   SystemMonitor:1364 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-03-24 10:08:06,175 DEBUG   SystemMonitor:1364 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-03-24 10:08:06,175 DEBUG   SystemMonitor:1364 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-03-24 10:08:06,175 INFO    HandlerThread:1364 [interfaces.py:finish():175] Joined cpu
+2023-03-24 10:08:06,176 INFO    HandlerThread:1364 [interfaces.py:finish():175] Joined disk
+2023-03-24 10:08:06,214 INFO    HandlerThread:1364 [interfaces.py:finish():175] Joined gpu
+2023-03-24 10:08:06,215 INFO    HandlerThread:1364 [interfaces.py:finish():175] Joined memory
+2023-03-24 10:08:06,215 INFO    HandlerThread:1364 [interfaces.py:finish():175] Joined network
+2023-03-24 10:08:06,215 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: resume
+2023-03-24 10:08:06,215 INFO    HandlerThread:1364 [handler.py:handle_request_resume():708] starting system metrics thread or process
+2023-03-24 10:08:06,215 DEBUG   SenderThread:1364 [sender.py:send():336] send: stats
+2023-03-24 10:08:06,215 INFO    HandlerThread:1364 [system_monitor.py:start():151] Starting system monitor
+2023-03-24 10:08:06,216 INFO    SystemMonitor:1364 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-03-24 10:08:06,217 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: pause
+2023-03-24 10:08:06,221 INFO    HandlerThread:1364 [handler.py:handle_request_pause():717] stopping system metrics thread or process
+2023-03-24 10:08:06,221 INFO    SystemMonitor:1364 [interfaces.py:start():168] Started cpu
+2023-03-24 10:08:06,222 INFO    HandlerThread:1364 [system_monitor.py:finish():161] Stopping system monitor
+2023-03-24 10:08:06,226 INFO    HandlerThread:1364 [interfaces.py:finish():175] Joined cpu
+2023-03-24 10:08:06,227 INFO    HandlerThread:1364 [interfaces.py:finish():175] Joined disk
+2023-03-24 10:08:06,227 INFO    SystemMonitor:1364 [interfaces.py:start():168] Started disk
+2023-03-24 10:08:06,227 DEBUG   SystemMonitor:1364 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-03-24 10:08:06,227 DEBUG   SystemMonitor:1364 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-03-24 10:08:06,227 DEBUG   SystemMonitor:1364 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-03-24 10:08:06,227 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: resume
+2023-03-24 10:08:06,228 INFO    HandlerThread:1364 [handler.py:handle_request_resume():708] starting system metrics thread or process
+2023-03-24 10:08:06,228 INFO    HandlerThread:1364 [system_monitor.py:start():151] Starting system monitor
+2023-03-24 10:08:06,228 INFO    SystemMonitor:1364 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-03-24 10:08:06,228 DEBUG   SenderThread:1364 [sender.py:send():336] send: stats
+2023-03-24 10:08:06,232 INFO    SystemMonitor:1364 [interfaces.py:start():168] Started cpu
+2023-03-24 10:08:06,238 INFO    SystemMonitor:1364 [interfaces.py:start():168] Started disk
+2023-03-24 10:08:06,239 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: pause
+2023-03-24 10:08:06,239 INFO    HandlerThread:1364 [handler.py:handle_request_pause():717] stopping system metrics thread or process
+2023-03-24 10:08:06,239 INFO    SystemMonitor:1364 [interfaces.py:start():168] Started gpu
+2023-03-24 10:08:06,239 INFO    HandlerThread:1364 [system_monitor.py:finish():161] Stopping system monitor
+2023-03-24 10:08:06,239 INFO    SystemMonitor:1364 [interfaces.py:start():168] Started memory
+2023-03-24 10:08:06,240 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:08:06,240 DEBUG   SystemMonitor:1364 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-03-24 10:08:06,240 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\wandb-summary.json
+2023-03-24 10:08:06,240 INFO    HandlerThread:1364 [interfaces.py:finish():175] Joined cpu
+2023-03-24 10:08:06,240 DEBUG   SystemMonitor:1364 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-03-24 10:08:06,240 INFO    HandlerThread:1364 [interfaces.py:finish():175] Joined disk
+2023-03-24 10:08:06,241 DEBUG   SystemMonitor:1364 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-03-24 10:08:06,292 INFO    HandlerThread:1364 [interfaces.py:finish():175] Joined gpu
+2023-03-24 10:08:06,293 INFO    HandlerThread:1364 [interfaces.py:finish():175] Joined memory
+2023-03-24 10:08:06,293 DEBUG   SenderThread:1364 [sender.py:send():336] send: stats
+2023-03-24 10:08:08,247 INFO    Thread-17 :1364 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\student\Desktop\Daniel og Sayna\Bachelor\Code\notebooks\pyTorch\wandb\run-20230324_100538-23qcu3ec\files\output.log
+2023-03-24 10:08:10,759 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:08:11,329 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:08:15,825 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:08:16,372 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:08:20,880 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:08:21,415 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:08:25,932 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:08:26,469 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:08:30,967 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:08:31,517 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:08:36,014 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:08:36,562 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:08:41,046 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:08:41,613 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:08:46,089 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:08:46,675 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:08:51,147 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:08:51,727 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:08:56,202 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:08:56,782 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:09:01,258 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:09:01,842 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:09:06,318 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:09:06,901 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:09:11,371 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:09:11,953 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:09:16,425 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:09:17,006 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:09:21,481 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:09:22,060 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:09:26,531 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:09:27,112 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:09:31,582 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:09:32,165 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:09:36,636 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:09:37,221 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:09:41,690 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:09:42,273 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:09:46,734 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:09:47,315 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:09:51,778 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:09:52,376 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:09:56,803 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:09:57,417 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:10:01,865 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:10:02,436 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:10:06,910 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:10:07,502 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:10:11,956 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:10:12,532 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:10:16,990 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:10:17,560 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:10:22,017 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:10:22,613 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:10:27,046 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:10:27,674 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:10:32,108 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:10:32,737 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:10:37,163 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:10:37,786 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:10:42,209 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:10:42,836 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:10:47,270 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:10:47,872 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:10:52,308 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:10:52,893 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:10:57,361 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:10:57,957 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:11:02,415 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:11:03,002 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:11:07,468 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:11:08,038 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:11:12,519 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:11:13,072 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:11:17,548 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:11:18,114 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:11:22,580 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:11:23,162 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:11:27,594 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:11:28,198 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:11:32,650 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:11:33,250 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:11:37,679 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:11:38,294 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:11:42,733 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:11:43,348 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:11:47,783 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:11:48,398 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:11:52,828 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:11:53,459 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:11:57,868 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:11:58,517 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:12:02,895 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:12:03,570 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:12:07,944 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:12:08,620 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:12:12,984 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:12:13,675 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:12:18,042 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:12:18,718 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:12:23,085 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:12:23,774 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:12:28,152 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:12:28,825 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:12:33,202 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:12:33,876 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:12:38,256 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:12:38,931 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:12:43,318 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:12:43,992 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:12:48,342 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:12:49,036 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:12:53,378 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:12:54,076 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:12:58,425 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:12:59,133 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:13:03,477 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:13:04,184 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:13:08,533 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:13:09,238 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:13:13,591 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:13:14,297 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:13:18,648 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:13:19,353 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:13:23,688 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:13:24,398 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:13:28,722 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:13:29,431 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:13:33,767 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:13:34,474 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:13:38,832 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:13:39,521 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:13:43,885 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:13:44,578 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:13:48,927 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:13:49,618 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:13:53,983 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:13:54,677 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:13:59,051 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:13:59,741 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:14:04,117 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:14:04,796 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:14:09,142 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:14:09,863 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:14:14,177 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:14:14,910 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:14:19,207 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:14:19,932 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:14:24,244 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:14:24,984 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:14:29,273 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:14:30,042 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:14:34,320 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:14:35,073 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:14:39,368 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:14:40,109 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:14:44,401 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:14:45,155 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:14:49,454 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:14:50,210 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:14:54,509 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:14:55,277 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:14:59,569 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:15:00,310 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:15:04,604 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:15:05,326 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:15:09,669 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:15:10,390 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:15:14,725 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:15:15,444 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:15:19,763 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:15:20,499 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:15:24,782 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:15:25,531 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:15:29,826 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:15:30,562 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:15:34,871 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:15:35,609 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:15:39,931 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:15:40,656 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:15:44,983 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:15:45,686 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:15:50,017 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:15:50,717 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:15:55,060 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:15:55,764 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:16:00,091 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:16:00,810 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:16:05,154 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:16:05,858 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:16:10,201 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:16:10,907 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:16:15,247 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:16:15,967 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:16:20,295 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:16:20,999 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:16:25,326 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:16:26,059 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:16:30,372 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:16:31,107 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:16:35,404 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:16:36,156 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:16:40,451 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:16:41,216 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:16:45,485 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:16:46,248 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:16:50,528 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:16:51,294 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:16:55,577 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:16:56,330 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:17:00,609 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:17:01,373 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:17:05,670 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:17:06,404 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:17:10,719 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:17:11,450 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:17:15,775 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:17:16,500 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:17:20,825 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:17:21,546 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:17:25,873 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:17:26,592 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:17:30,919 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:17:31,638 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:17:35,968 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:17:36,669 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:17:41,014 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:17:41,701 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:17:46,060 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:17:46,747 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:17:51,104 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:17:51,794 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:17:56,154 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:17:56,830 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:18:01,201 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:18:01,872 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:18:06,247 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:18:06,922 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:18:11,280 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:18:11,969 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:18:16,312 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:18:17,015 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:18:21,342 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:18:22,061 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:18:26,373 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:18:27,107 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:18:31,435 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:18:32,154 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:18:36,481 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:18:37,188 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:18:41,528 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:18:42,245 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:18:46,563 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:18:47,295 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:18:51,623 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:18:52,342 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:18:56,684 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:18:57,373 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:19:01,717 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:19:02,434 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:19:06,763 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:19:07,467 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:19:11,795 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:19:12,514 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:19:16,843 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:19:17,561 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:19:21,889 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:19:22,606 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:19:26,936 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:19:27,639 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:19:31,981 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:19:32,683 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:19:37,030 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:19:37,733 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:19:42,075 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:19:42,782 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:19:47,131 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:19:47,817 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:19:52,184 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:19:52,873 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:19:57,218 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:19:57,920 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:20:02,276 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:20:02,954 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:20:07,305 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:20:07,979 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:20:12,365 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:20:13,024 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:20:17,402 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:20:18,060 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:20:22,424 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:20:23,093 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:20:27,480 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:20:28,127 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:20:32,521 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:20:33,164 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:20:37,562 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:20:38,191 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:20:42,618 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:20:43,246 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:20:47,670 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:20:48,295 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:20:52,709 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:20:53,310 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:20:57,755 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:20:58,370 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:21:02,804 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:21:03,411 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:21:07,829 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:21:08,429 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:21:12,887 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:21:13,466 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:21:17,913 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:21:18,514 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:21:22,951 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:21:23,531 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:21:27,982 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:21:28,569 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:21:33,028 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:21:33,602 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:21:38,044 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:21:38,624 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:21:43,090 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:21:43,651 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 10:21:48,125 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-24 10:21:48,699 DEBUG   HandlerThread:1364 [handler.py:handle_request():144] handle_request: status_report

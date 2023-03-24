@@ -47,3 +47,4 @@ class Hingeloss(nn.Module):
         total = torch.tensor(target.shape[0], device=target.device)
         return (measures.sum(dim=0) / total)
     
+
