@@ -182,7 +182,7 @@ class ResNetModel(nn.Module):
 
         return nn.Sequential(*layers)
 
-# ==== Residual network model
+# ==== Residual network model(50,101)
 
 
 class ResNet(nn.Module):
@@ -205,7 +205,8 @@ class ResNet(nn.Module):
             ResBlock, layer_list[3], planes=512, stride=2)
 
         self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
-        self.fc = nn.Linear(512*ResBlock.expansion, num_classes)
+        self.fc0 = nn.Linear(512*ResBlock.expansion, 1000)
+        self.fc1 = nn.Linear(1000, num_classes)
 
     def forward(self, x):
         x = self.relu(self.batch_norm1(self.conv1(x)))
@@ -217,8 +218,10 @@ class ResNet(nn.Module):
         x = self.layer4(x)
 
         x = self.avgpool(x)
-        x = x.reshape(x.shape[0], -1)
-        x = self.fc(x)
+        x = torch.flatten(x, 1)
+        x = self.fc0(x)
+        x = self.fc1(x)
+
 
         return x
 

@@ -183,7 +183,7 @@ def sweep(train, test, config=None):
     
     # ==== Loss functions
     if config['loss'] == 'customLoss':
-        criterion = lossFunctions.CustomLoss()
+        criterion = lossFunctions.CustomLoss(config['exponent'])
     elif config['loss'] == 'hinge':
         criterion = nn.MultiMarginLoss()
     else:
