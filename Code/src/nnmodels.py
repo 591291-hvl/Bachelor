@@ -19,8 +19,10 @@ class ConvModel(nn.Module):
         self.conv3 = nn.Conv2d(
             in_channels=64, out_channels=256, kernel_size=3, padding=0)
 
-        self.fc1 = nn.Linear(3*3*256, 128)
-        self.fc2 = nn.Linear(128, 2)
+        # self.fc1 = nn.Linear(3*3*256, 128)
+        # self.fc2 = nn.Linear(128, 2)
+        self.fc1 = nn.Linear(3*3*256, 1000)
+        self.fc2 = nn.Linear(1000, 2)
 
         self.dropout = nn.Dropout(dropout)
 
