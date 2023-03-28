@@ -14,7 +14,7 @@ else:
     device = torch.device("cpu")
     print("Running on the CPU")
 
-def trainLoop(model, trainLoader, criterion, optimizer, train):
+def trainLoop(model, trainLoader, criterion, optimizer):
     #training variables
     trainRunningLoss = 0.0
     correct = 0
@@ -40,13 +40,13 @@ def trainLoop(model, trainLoader, criterion, optimizer, train):
     #training loop end
     correct = (torch.FloatTensor(y_pred) == torch.FloatTensor(y_true)).sum()
     trainAccuracy = correct / len(y_true)
-    trainRunningLoss = trainRunningLoss/len(train) #TODO sjekk om dette faktisk er riktig???
+    trainRunningLoss = trainRunningLoss/len(y_pred)
     #training variables end
     
     return trainAccuracy, trainRunningLoss
 
 
-def testLoop(model, testLoader, criterion, test):
+def testLoop(model, testLoader, criterion):
     #test variables
     testRunningLoss = 0.0
     y_pred = []
@@ -68,7 +68,7 @@ def testLoop(model, testLoader, criterion, test):
 
     correct = (torch.FloatTensor(y_pred) == torch.FloatTensor(y_true)).sum()
     testAccuracy = correct / len(y_true)
-    testRunningLoss = testRunningLoss/len(test) #TODO sjekk om dette faktisk er riktig???
+    testRunningLoss = testRunningLoss/len(y_pred) 
 
     y_pred_numpy = [x.data.cpu().numpy() for x in y_pred]
     y_true_numpy = [x.data.cpu().numpy() for x in y_true]
@@ -127,7 +127,7 @@ def run(train, test, config=None):
 
     # =========================================
     # pre test
-    testAccuracy, testRunningLoss, testRecall, testPrecision, bhAccuarcy, sphAccuracy, y_pred, y_true = testLoop(model, testLoader, criterion, test)
+    testAccuracy, testRunningLoss, testRecall, testPrecision, bhAccuarcy, sphAccuracy, y_pred, y_true = testLoop(model, testLoader, criterion)
     # =========================================
     wandb.log({ 
                    "Test epoch_loss": testRunningLoss, 
@@ -141,13 +141,13 @@ def run(train, test, config=None):
     for epoch in range(config['epoch']):
         # =========================================
         #Train
-        trainAccuracy, trainRunningLoss = trainLoop(model, trainLoader, criterion, optimizer, train)
+        trainAccuracy, trainRunningLoss = trainLoop(model, trainLoader, criterion, optimizer)
         # =========================================
         
 
         # =========================================
         #test
-        testAccuracy, testRunningLoss, testRecall, testPrecision, bhAccuarcy, sphAccuracy, y_pred, y_true = testLoop(model, testLoader, criterion, test)
+        testAccuracy, testRunningLoss, testRecall, testPrecision, bhAccuarcy, sphAccuracy, y_pred, y_true = testLoop(model, testLoader, criterion)
         # =========================================
 
         #wandb log
@@ -182,12 +182,14 @@ def sweep(train, test, config=None):
         model = nnmodels.ResNet(nnmodels.Bottleneck, [3, 4, 23, 3], 2, 3).to(device)
     
     # ==== Loss functions
-    if config['loss'] == 'customLoss':
-        criterion = lossFunctions.CustomLoss(config['exponent'])
+    if 'customLoss' in config['loss']:
+        criterion = lossFunctions.CustomLoss(int(config['loss'].split('-')[1]))
     elif config['loss'] == 'hinge':
         criterion = nn.MultiMarginLoss()
-    else:
+    else: 
         criterion = nn.CrossEntropyLoss()
+
+               
     
     # ==== Optimizers
     if config['optimizer'] == 'adam':
@@ -211,7 +213,7 @@ def sweep(train, test, config=None):
     
     # =========================================
     # pre test
-    testAccuracy, testRunningLoss, testRecall, testPrecision, bhAccuarcy, sphAccuracy, y_pred, y_true = testLoop(model, testLoader, criterion, test)
+    testAccuracy, testRunningLoss, testRecall, testPrecision, bhAccuarcy, sphAccuracy, y_pred, y_true = testLoop(model, testLoader, criterion)
     # =========================================
     wandb.log({ 
                    "Test epoch_loss": testRunningLoss, 
@@ -225,13 +227,13 @@ def sweep(train, test, config=None):
     for epoch in range(config['epoch']):
         # =========================================
         #Train
-        trainAccuracy, trainRunningLoss = trainLoop(model, trainLoader, criterion, optimizer, train)
+        trainAccuracy, trainRunningLoss = trainLoop(model, trainLoader, criterion, optimizer)
         # =========================================
         
 
         # =========================================
         #test
-        testAccuracy, testRunningLoss, testRecall, testPrecision, bhAccuarcy, sphAccuracy, y_pred, y_true = testLoop(model, testLoader, criterion, test)
+        testAccuracy, testRunningLoss, testRecall, testPrecision, bhAccuarcy, sphAccuracy, y_pred, y_true = testLoop(model, testLoader, criterion)
         # =========================================
 
         #wandb log
