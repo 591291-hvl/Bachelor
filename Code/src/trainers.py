@@ -97,6 +97,8 @@ def run(train, test, config=None):
         model = nnmodels.ResNet(nnmodels.Bottleneck, [3, 4, 6, 3], 2, 3).to(device)
     elif config['model'] == 'resnet101':
         model = nnmodels.ResNet(nnmodels.Bottleneck, [3, 4, 23, 3], 2, 3).to(device)
+    elif config['model'] == 'resnet34Pre':
+        model = nnmodels.Resnet34().to(device)
     elif config['model'] == 'resnet50Pre':
         model = nnmodels.Resnet50().to(device)
     
@@ -183,6 +185,10 @@ def sweep(train, test, config=None):
         model = nnmodels.ResNet(nnmodels.Bottleneck, [3, 4, 6, 3], 2, 3).to(device)
     elif config['model'] == 'resnet101':
         model = nnmodels.ResNet(nnmodels.Bottleneck, [3, 4, 23, 3], 2, 3).to(device)
+    elif config['model'] == 'resnet34Pre':
+        model = nnmodels.Resnet34().to(device)
+    elif config['model'] == 'resnet50Pre':
+        model = nnmodels.Resnet50().to(device)
     
     # ==== Loss functions
     if 'customLoss' in config['loss']:

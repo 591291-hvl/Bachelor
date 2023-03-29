@@ -29,24 +29,3 @@ class CustomLoss(nn.Module):
         return -torch.sum(input) / batch_size
 
 
-class Hingeloss(nn.Module):
-    def __init__(self):
-        super(Hingeloss, self).__init__()
-    
-    def forward(self, input, targets):
-        m = nn.Sigmoid()
-        input = m(input)
-
-        input = torch.max(m(input), dim=-1)[0]
-
-        target = targets.bool()
-        margin = torch.zeros_like(input)
-        margin[target] = input[target]
-        margin[~target] = -input[~target]
-
-        measures = 1 - margin
-        measures = torch.clamp(measures, 0)
-        total = torch.tensor(target.shape[0], device=target.device)
-        return (measures.sum(dim=0) / total)
-    
-
