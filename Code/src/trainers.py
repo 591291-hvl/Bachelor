@@ -7,6 +7,7 @@ from sklearn.metrics import precision_score, recall_score
 import lossFunctions
 import nnmodels
 
+
 if torch.cuda.is_available():
     device = torch.device("cuda")
     print("Running on the GPU")
@@ -96,6 +97,8 @@ def run(train, test, config=None):
         model = nnmodels.ResNet(nnmodels.Bottleneck, [3, 4, 6, 3], 2, 3).to(device)
     elif config['model'] == 'resnet101':
         model = nnmodels.ResNet(nnmodels.Bottleneck, [3, 4, 23, 3], 2, 3).to(device)
+    elif config['model'] == 'resnet50Pre':
+        model = nnmodels.Resnet50().to(device)
     
     # ==== Loss functions
     if config['loss'] == 'customLoss':

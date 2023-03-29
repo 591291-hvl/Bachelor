@@ -3,6 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch
 from torch import Tensor
+from torchvision.models import resnet50, ResNet50_Weights
 
 # ==== Convolutional model
 
@@ -246,3 +247,17 @@ class ResNet(nn.Module):
             layers.append(ResBlock(self.in_channels, planes))
 
         return nn.Sequential(*layers)
+
+# ==== Pretrained imagenet model
+
+
+class Resnet50(nn.Module):
+    def __init__(self):
+        super(Resnet50, self).__init__()
+        self.model = resnet50(weights=ResNet50_Weights.IMAGENET1K_V2)
+        self.my_new_layer = nn.Sequential(nn.Linear(1000, 2))
+    
+    def forward(self, x):
+        x = self.model(x)
+        x = self.my_new_layer(x)
+        return x
