@@ -255,7 +255,7 @@ class ResNet(nn.Module):
 class Resnet34(nn.Module):
     def __init__(self):
         super(Resnet34, self).__init__()
-        self.model = resnet34(weights=ResNet34_Weights.IMAGENET1K_V2)
+        self.model = resnet34(weights=ResNet34_Weights.IMAGENET1K_V1)
         self.my_new_layer = nn.Sequential(nn.Linear(1000, 2))
     
     def forward(self, x):
