@@ -103,11 +103,11 @@ def run(train, test, config=None):
         model = nnmodels.Resnet50().to(device)
     
     # ==== Loss functions
-    if config['loss'] == 'customLoss':
-        criterion = lossFunctions.CustomLoss()
+    if 'customLoss' in config['loss']:
+        criterion = lossFunctions.CustomLoss(int(config['loss'].split('-')[1]))
     elif config['loss'] == 'hinge':
         criterion = nn.MultiMarginLoss()
-    else:
+    else: 
         criterion = nn.CrossEntropyLoss()
     
     # ==== Optimizers
