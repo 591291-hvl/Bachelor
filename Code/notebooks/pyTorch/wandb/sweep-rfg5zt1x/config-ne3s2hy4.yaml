@@ -1,0 +1,18 @@
+wandb_version: 1
+
+batch_size:
+  value: 50
+dropout:
+  value: 0
+epoch:
+  value: 10
+gamma:
+  value: 1
+learning_rate:
+  value: 0.01
+loss:
+  value: hinge
+model:
+  value: resnet34
+optimizer:
+  value: adam
