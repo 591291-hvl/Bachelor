@@ -1,0 +1,19 @@
+output:  [ 3.1796732 -5.137537 ] labels:  0.0
+output:  [-1.0544972  0.6403359] labels:  1.0
+output:  [-0.6022922   0.02326488] labels:  1.0
+output:  [-0.23505092 -0.4778657 ] labels:  0.0
+output:  [ 2.6936994 -4.4743853] labels:  0.0
+output:  [-1.1603482   0.78477824] labels:  1.0
+output:  [ 3.8505769 -6.05304  ] labels:  0.0
+output:  [ 2.9001737 -4.7561364] labels:  0.0
+output:  [-0.3782456  -0.28246474] labels:  1.0
+output:  [-0.606462    0.02895498] labels:  1.0
+output:  0 labels:  0.0
+output:  1 labels:  1.0
+output:  1 labels:  1.0
+output:  1 labels:  1.0
+output:  1 labels:  1.0
+output:  0 labels:  0.0
+output:  1 labels:  1.0
+output:  0 labels:  0.0
+output:  0 labels:  1.0

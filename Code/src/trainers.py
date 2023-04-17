@@ -74,11 +74,11 @@ def testLoop(model, testLoader, criterion):
     y_pred_numpy = [x.data.cpu().numpy() for x in y_pred]
     y_true_numpy = [x.data.cpu().numpy() for x in y_true]
 
-    testRecall = recall_score(y_pred_numpy, y_true_numpy)
-    testPrecision = precision_score(y_pred_numpy, y_true_numpy)
+    testRecall = recall_score(y_true_numpy, y_pred_numpy)
+    testPrecision = precision_score(y_true_numpy, y_pred_numpy)
 
-    bhAccuarcy = sum([x == y for (x, y) in zip(y_pred_numpy, y_true_numpy) if x == 0.0])/len([x for x in y_true_numpy if x == 0.0])
-    sphAccuracy = sum([x == y for (x, y) in zip(y_pred_numpy, y_true_numpy) if x == 1.0])/len([x for x in y_true_numpy if x == 1.0])
+    bhAccuarcy = sum([x == y for (x, y) in zip(y_pred_numpy, y_true_numpy) if y == 0.0])/len([x for x in y_true_numpy if x == 0.0])
+    sphAccuracy = sum([x == y for (x, y) in zip(y_pred_numpy, y_true_numpy) if y == 1.0])/len([x for x in y_true_numpy if x == 1.0])
     #test variables end
 
     return testAccuracy, testRunningLoss, testRecall, testPrecision, bhAccuarcy, sphAccuracy, y_pred, y_true
@@ -99,8 +99,10 @@ def run(train, test, config=None):
         model = nnmodels.ResNet(nnmodels.Bottleneck, [3, 4, 23, 3], 2, 3).to(device)
     elif config['model'] == 'resnet34Pre':
         model = nnmodels.Resnet34().to(device)
+        model.model.requires_grad = False
     elif config['model'] == 'resnet50Pre':
         model = nnmodels.Resnet50().to(device)
+        model.model.requires_grad = False
     
     # ==== Loss functions
     if 'customLoss' in config['loss']:
