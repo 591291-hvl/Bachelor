@@ -1,2 +1,3 @@
 Code/data/*
+Code/notebooks/pytorch/wandb/*
 .h5
