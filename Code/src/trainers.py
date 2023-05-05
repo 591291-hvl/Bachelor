@@ -211,7 +211,7 @@ def sweep(train, test, config=None):
         optimizer = torch.optim.SGD(model.parameters(), lr=config['learning_rate'])
 
 
-    scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=10, gamma=config['gamma'])
+    scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=5, gamma=config['gamma'])
     #initialize variables end
 
 
