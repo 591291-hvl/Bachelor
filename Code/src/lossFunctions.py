@@ -35,3 +35,7 @@ def testSoftmax(x,exponent):
     x_exp_sum = torch.sum(x_exp, 1, keepdim=True)
     return x_exp/x_exp_sum
 
+def sigmoid(x,exponent):
+    x_pow = x.sign() * x.abs().pow(1/exponent)
+    x_exp = torch.exp(-x_pow)
+    return 1/(1+x_exp)
