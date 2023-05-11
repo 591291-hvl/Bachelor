@@ -1,1 +1,0 @@
-{"Test epoch_loss": NaN, "Test accuracy": 0.505466639995575, "Test recall": 0.0, "Test precision": 0.0, "BH accuracy": 1.0, "SPH accuracy": 0.0, "_timestamp": 1680254120.1898568, "_runtime": 419.79841566085815, "_step": 20, "Train epoch_loss": NaN, "Train accuracy": 0.49817776679992676, "_wandb": {"runtime": 419}}

@@ -1,1 +1,0 @@
-{"Train epoch_loss": 0.7035606630974346, "Test epoch_loss": 0.33209341665109, "Train accuracy": 0.7712000012397766, "Test accuracy": 0.8633333444595337, "Test recall": 0.8563462559745088, "Test precision": 0.8695066055540577, "BH accuracy": 0.8572936058044434, "SPH accuracy": 0.8695065975189209, "_timestamp": 1679309618.6211066, "_runtime": 594.1931257247925, "_step": 0}

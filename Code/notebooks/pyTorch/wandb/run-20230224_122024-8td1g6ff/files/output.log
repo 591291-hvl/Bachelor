@@ -1,3 +1,0 @@
-Create sweep with ID: czdnfbcy
-Sweep URL: https://wandb.ai/g13hvl2023/test/sweeps/czdnfbcy
-[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.

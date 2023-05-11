@@ -1,1 +1,0 @@
-c:\Users\student\Anaconda3\envs\DAT191-gpu\lib\site-packages\torch\nn\functional.py:1967: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
